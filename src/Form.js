@@ -1,6 +1,7 @@
 import React from "react";
 import darkModeButton from "./icons/night.svg";
 import lightModeButton from "./icons/sun.svg";
+import Time from "./Time";
 
 const Form = ({
   handleInput,
@@ -13,7 +14,8 @@ const Form = ({
   return (
     <form onSubmit={handleSubmit} className="form">
       <div className="header">
-        <h1 className="">Todo List</h1>
+        <h3>Todo list</h3>
+        <Time />
         <button className="darkModeButton">
           {isDarkMode ? (
             <img
