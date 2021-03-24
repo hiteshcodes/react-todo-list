@@ -19,12 +19,13 @@ h3 {
   background-color: var(--dark-bg);
   color: var(--dark-color);
   width: 100%;
+  margin: auto;
   min-height: 100vh;
 }
 .app-dark,
 .app-light {
-  padding: 20px;
   transition: 0.8s ease;
+  padding-top: 20px;
 }
 .todo-list-dark > ul > li {
   color: black;
@@ -52,7 +53,9 @@ h3 {
 .form-main {
   display: flex;
   width: 458px;
-  margin: auto;
+  margin: 0px auto 17px;
+  padding: 0px 0px 10px;
+  border-bottom: 1px solid;
 }
 .form-main > input {
   flex: 1;
@@ -69,7 +72,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: auto 20px;
+  padding: auto;
   width: 458px;
   margin: auto;
 }
@@ -93,9 +96,17 @@ h3 {
   position: relative;
   margin: 0.5rem;
 }
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
 .todo-name {
   font-size: 1.2em;
-  word-wrap: wrap;
+  width: 260px;
+  word-wrap: break-word;
+  height: 55px;
+  padding: 8px;
+  overflow-y: scroll;
 }
 button {
   cursor: pointer;
