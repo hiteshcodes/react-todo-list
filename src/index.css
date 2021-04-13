@@ -47,8 +47,8 @@ h3 {
 .time {
   font-family: "Cairo", sans-serif;
 }
-.time > span {
-  font-size: 1.7rem;
+span {
+  font-size: 1.1rem;
 }
 .form-main {
   display: flex;
@@ -102,10 +102,9 @@ h3 {
 }
 .todo-name {
   font-size: 1.2em;
-  width: 260px;
+  width: 250px;
   word-wrap: break-word;
   height: 55px;
-  padding: 8px;
   overflow-y: scroll;
 }
 button {

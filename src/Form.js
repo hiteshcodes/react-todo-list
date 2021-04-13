@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import darkModeButton from "./icons/night.svg";
 import lightModeButton from "./icons/sun.svg";
-import Time from "./Time";
+import moment from "moment";
 
 const Form = ({
   handleInput,
@@ -11,11 +11,18 @@ const Form = ({
   handleLightModeButton,
   handleDarkModeButton,
 }) => {
+  const [currDate, setCurrDate] = useState("");
+  useEffect(() => {
+    setCurrDate(moment().format("ddd, Do MMMM YYYY, h:mm a"));
+  }, []);
+
   return (
     <form onSubmit={handleSubmit} className="form">
       <div className="header">
-        <h3>Todo list</h3>
-        <Time />
+        <div className="">
+          <h3>Todo list</h3>
+          <span>{currDate}</span>
+        </div>
         <button className="darkModeButton">
           {isDarkMode ? (
             <img
