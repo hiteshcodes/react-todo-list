@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,8 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: source-code-pro, monospace;
-
+  /* font-family: source-code-pro, monospace; */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
   --dark-bg: #16161a;
   --dark-color: #fffffe;
   --dark-secondary-bg: #b8b9b9;
