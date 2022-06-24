@@ -13,7 +13,9 @@ const Form = ({
 }) => {
   const [currDate, setCurrDate] = useState("");
   useEffect(() => {
-    setCurrDate(moment().format("ddd, Do MMMM YYYY, h:mm a"));
+     setInterval(() => {
+      setCurrDate(moment().format("ddd, Do MMMM YYYY, h:mm a"));
+    }, 1000);
   }, []);
 
   return (
